@@ -1,5 +1,6 @@
 package com.rizki.app12141381;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -16,13 +17,22 @@ public class Tugas {
 
     public void Games() {
         Scanner name = new Scanner(System.in);
-        System.out.println("Jika ingin memulai harap masukan nama Anda jika tidak tekan x");
+        System.out.println("Jika ingin memulai harap masukan nama Anda jika tidak tekan x : ");
         this.nama = name.nextLine();
         
         Scanner random = new Scanner(System.in);
         System.out.println("Harap masukkan angka Anda : ");
         this.asalAngka = random.nextInt();
+        
+        Random angka = new Random();
+        this.kesempatan = angka.nextInt();
+        
+        for (level=1; level<=5; level++){
+            
+        }
     }
+    
+    
     
     
         

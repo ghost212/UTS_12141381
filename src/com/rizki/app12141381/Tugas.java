@@ -25,11 +25,24 @@ public class Tugas {
         this.asalAngka = random.nextInt();
         
         Random angka = new Random();
-        this.kesempatan = angka.nextInt();
+        this.angkaAcak = angka.nextInt(101);
         
-        for (level=1; level<=5; level++){
-            
-        }
+//        System.out.println(angkaAcak);
+//        for (level=1; level<=5; level++){
+//            while(kesempatan <= 5)
+//            {
+                if (asalAngka < angkaAcak){
+                    System.out.println("Tebakan kekecilan");
+                }
+                else if (asalAngka > angkaAcak){
+                    System.out.println("Tebakan kebesaran");
+                }
+                else if (asalAngka == angkaAcak){
+                    System.out.println("Tebakan Bener");
+                }
+                
+//            }
+//        }
     }
     
     

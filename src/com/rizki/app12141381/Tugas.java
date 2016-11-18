@@ -16,7 +16,12 @@ public class Tugas {
 
     public void Games() {
         Scanner name = new Scanner(System.in);
+        System.out.println("Jika ingin memulai harap masukan nama Anda jika tidak tekan x");
+        this.nama = name.nextLine();
         
+        Scanner random = new Scanner(System.in);
+        System.out.println("Harap masukkan angka Anda : ");
+        this.asalAngka = random.nextInt();
     }
     
     
